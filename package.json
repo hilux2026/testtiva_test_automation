@@ -1,0 +1,21 @@
+{
+  "name": "testiva-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:codegen":"npx playwright codegen --load-storage=storage/loginState.json",
+    "test:grep" : "npx playwright test --grep='value' --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
